@@ -10,7 +10,7 @@ Summary:	The Qt5 Gamepad library
 Summary(pl.UTF-8):	Biblioteka Qt5 Gamepad
 Name:		qt5-%{orgname}
 Version:	5.15.2
-Release:	2
+Release:	3
 License:	LGPL v3 or GPL v2+ or commercial
 Group:		Libraries
 Source0:	http://download.qt.io/official_releases/qt/5.15/%{version}/submodules/%{orgname}-everywhere-src-%{version}.tar.xz
@@ -203,6 +203,7 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{qt5dir}/plugins/gamepads
 # R: Qt5Core Qt5Gamepad udev-libs
 %attr(755,root,root) %{qt5dir}/plugins/gamepads/libevdevgamepad.so
+%dir %{_libdir}/cmake/Qt5Gamepad
 
 %files -n Qt5Gamepad-devel
 %defattr(644,root,root,755)
@@ -210,7 +211,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/libQt5Gamepad.prl
 %{_includedir}/qt5/QtGamepad
 %{_pkgconfigdir}/Qt5Gamepad.pc
-%{_libdir}/cmake/Qt5Gamepad
+%{_libdir}/cmake/Qt5Gamepad/Qt5GamepadConfig*.cmake
+%{_libdir}/cmake/Qt5Gamepad/Qt5Gamepad_QEvdevGamepadBackendPlugin.cmake
 %{qt5dir}/mkspecs/modules/qt_lib_gamepad.pri
 %{qt5dir}/mkspecs/modules/qt_lib_gamepad_private.pri
 
@@ -218,6 +220,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 # R: Qt5Core Qt5Gamepad SDL2
 %attr(755,root,root) %{qt5dir}/plugins/gamepads/libsdl2gamepad.so
+%{_libdir}/cmake/Qt5Gamepad/Qt5Gamepad_QSdl2GamepadBackendPlugin.cmake
 
 %if %{with doc}
 %files doc
