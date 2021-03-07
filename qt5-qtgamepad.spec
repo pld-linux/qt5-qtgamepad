@@ -99,7 +99,7 @@ Summary(pl.UTF-8):	Dokumentacja do biblioteki Qt5 Gamepad w formacie HTML
 License:	FDL v1.3
 Group:		Documentation
 Requires:	qt5-doc-common >= %{qtbase_ver}
-%{?noarchpackage}
+BuildArch:	noarch
 
 %description doc
 Qt5 Gamepad documentation in HTML format.
@@ -113,7 +113,7 @@ Summary(pl.UTF-8):	Dokumentacja do biblioteki Qt5 Gamepad w formacie QCH
 License:	FDL v1.3
 Group:		Documentation
 Requires:	qt5-doc-common >= %{qtbase_ver}
-%{?noarchpackage}
+BuildArch:	noarch
 
 %description doc-qch
 Qt5 Gamepad documentation in QCH format.
@@ -126,7 +126,7 @@ Summary:	Qt5 Gamepad examples
 Summary(pl.UTF-8):	Przykłady do biblioteki Qt5 Gamepad
 License:	BSD or commercial
 Group:		Development/Libraries
-%{?noarchpackage}
+BuildArch:	noarch
 
 %description examples
 Qt5 Gamepad examples.
