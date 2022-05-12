@@ -13,7 +13,7 @@ Version:	5.15.4
 Release:	1
 License:	LGPL v3 or GPL v2+ or commercial
 Group:		Libraries
-Source0:	http://download.qt.io/official_releases/qt/5.15/%{version}/submodules/%{orgname}-everywhere-opensource-src-%{version}.tar.xz
+Source0:	https://download.qt.io/official_releases/qt/5.15/%{version}/submodules/%{orgname}-everywhere-opensource-src-%{version}.tar.xz
 # Source0-md5:	694395e866f8cc4e583a629b0b7fc3c8
 URL:		https://www.qt.io/
 BuildRequires:	Qt5Core-devel >= %{qtbase_ver}
