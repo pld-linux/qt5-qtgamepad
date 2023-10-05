@@ -9,12 +9,12 @@
 Summary:	The Qt5 Gamepad library
 Summary(pl.UTF-8):	Biblioteka Qt5 Gamepad
 Name:		qt5-%{orgname}
-Version:	5.15.10
+Version:	5.15.11
 Release:	1
 License:	LGPL v3 or GPL v2+ or commercial
 Group:		Libraries
 Source0:	https://download.qt.io/official_releases/qt/5.15/%{version}/submodules/%{orgname}-everywhere-opensource-src-%{version}.tar.xz
-# Source0-md5:	37049ec572e4191a37496e8877ffc0f8
+# Source0-md5:	1073f14786812ab5a6203530c34f582a
 URL:		https://www.qt.io/
 BuildRequires:	Qt5Core-devel >= %{qtbase_ver}
 BuildRequires:	Qt5DeviceDiscoverySupport-devel >= %{qtbase_ver}
