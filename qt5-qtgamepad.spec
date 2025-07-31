@@ -10,7 +10,7 @@ Summary:	The Qt5 Gamepad library
 Summary(pl.UTF-8):	Biblioteka Qt5 Gamepad
 Name:		qt5-%{orgname}
 Version:	5.15.17
-Release:	1
+Release:	2
 License:	LGPL v3 or GPL v2+ or commercial
 Group:		Libraries
 Source0:	https://download.qt.io/official_releases/qt/5.15/%{version}/submodules/%{orgname}-everywhere-opensource-src-%{version}.tar.xz
@@ -57,8 +57,8 @@ Summary(pl.UTF-8):	Biblioteka Qt5 Gamepad
 Group:		Libraries
 Requires:	Qt5Core >= %{qtbase_ver}
 Requires:	Qt5Gui >= %{qtbase_ver}
-Requires:	Qt5Qml-devel >= %{qtdeclarative_ver}
-Requires:	Qt5Quick-devel >= %{qtdeclarative_ver}
+Requires:	Qt5Qml >= %{qtdeclarative_ver}
+Requires:	Qt5Quick >= %{qtdeclarative_ver}
 
 %description -n Qt5Gamepad
 Qt Gamepad is an add-on library that enables Qt applications to
@@ -74,6 +74,8 @@ Summary(pl.UTF-8):	Biblioteka Qt5 Gamepad - pliki programistyczne
 Group:		Development/Libraries
 Requires:	Qt5Core-devel >= %{qtbase_ver}
 Requires:	Qt5Gui-devel >= %{qtbase_ver}
+Requires:	Qt5Qml-devel >= %{qtdeclarative_ver}
+Requires:	Qt5Quick-devel >= %{qtdeclarative_ver}
 Requires:	Qt5Gamepad = %{version}-%{release}
 
 %description -n Qt5Gamepad-devel
